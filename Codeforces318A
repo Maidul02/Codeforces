@@ -1,0 +1,45 @@
+import java.util.Scanner;
+public class Main {
+	  public static void main(String[] args) {
+	    Scanner sc = new Scanner(System.in);
+
+	    
+	    long n = sc.nextLong();
+	    long sum = 0;
+	    long a = sc.nextLong();
+	    
+	    if(n%2==0 && a<=(n/2)) {
+	    	sum = a*2-1;
+	    	System.out.println(sum);
+	    }
+	    
+	    else if(n%2==0 && a>(n/2)) {
+	    	a = a-(n/2); 
+	    	sum = a*2;
+	    	System.out.println(sum);
+	    }
+	    
+	    else if(n%2==1 && a<(n/2)+1) {
+	    	sum = a*2-1;
+	    	System.out.println(sum);
+	    }
+	   
+	    else if(n%2==1 && a>(n/2)+1) {
+	    	n = n/2 +1;
+	    	a = a - n;
+	    	sum = 2*a;
+	    
+	    	System.out.println(sum);
+	    }
+	    else if(n%2==1 && a==(n/2)+1) {
+	    	System.out.println(n);
+	    }
+	    	
+	    	
+	    
+	    
+	    
+	    
+	    
+}
+}
